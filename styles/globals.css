@@ -2,26 +2,134 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@keyframes bg-transition-green {
+  0% {
+    background-color: #3aaa35;
+  }
+  50% {
+    background-color: #006633db;
+  }
+  100% {
+    background-color: #006633;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /*  background: #006633;
+  background: linear-gradient(94deg, #006633 29%, #3aaa35 100%); */
+  animation: bg-transition-green 5s alternate-reverse infinite;
+}
+
+header {
+  background-image: url(../public/banner-de-bem-com-a-natureza.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 90vh;
+}
+
+.gradient-text {
+  color: #006633;
+}
+.gradient-text-orange {
+  background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-orange {
+  background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+}
+
+@keyframes color-transition {
+  0% {
+    color: #70f570;
+  }
+  50% {
+    color: #49c628;
+  }
+  100% {
+    color: green;
+  }
+}
+
+.texto-animado {
+  color: white;
+}
+
+@keyframes bg-transition {
+  0% {
+    background-color: #f2710f81;
+  }
+  50% {
+    background-color: #f2710fb0;
+  }
+  100% {
+    background-color: #f2700f;
+  }
+}
+
+.bg-animado {
+  animation: bg-transition 5s alternate-reverse infinite;
+}
+
+.icone {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  background-color: rgba(187, 31, 31, 0.1);
+  border-radius: 100px 20px 20px 20px;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  /*   border-right: 10px solid var(--cor-principal); */
+  margin: 0 20px;
+}
+
+.bg-agricultura {
+  position: relative;
+}
+
+.bg-agricultura::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(./../public/tractor-sprays-pesticides-field.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.5);
+  z-index: 1;
+}
+
+.bg-agricultura > div {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-teste {
+  position: relative;
+}
+
+.bg-teste::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff9a;
+  filter: brightness(0.5);
+  z-index: -1;
+  opacity: 50%;
+  border-radius: 15px;
+}
+
+.bg-teste > div {
+  position: relative;
+  z-index: 2;
 }
