@@ -5,12 +5,13 @@ import heart from "../../public/img7-768x768.png";
 export const Biogestor = () => {
   return (
     <section
-      className="flex flex-row-reverse bg-agricultura"
+      className="flex flex-row-reverse bg-biogestor"
       style={{ backgroundColor: "#ededed" }}
+      data-aos="fade-left"
     >
-      <div className="bg-animado px-3 lg:px-6"></div>
+      <div className="bg-animado px-3 lg:px-3"></div>
       <div className="p-6 lg:px-52 lg:py-20 flex flex-row-reverse justify-between">
-        <div className="flex flex-col p-5 gap-5 lg:text-right  lg:items-end  lg:gap-10 bg-teste lg:p-10">
+        <div className="flex flex-col p-5 gap-5 lg:text-center lg:items-center  lg:gap-10 bg-teste lg:p-10">
           <h1 className="text-4xl lg:text-6xl  texto-animado lg:h-20 capitalize">
             Biogestor{" "}
           </h1>

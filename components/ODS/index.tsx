@@ -13,15 +13,16 @@ export const ODS = () => {
   return (
     <section
       className="flex flex-row-reverse  bg-agricultura "
+      data-aos="fade-left"
       /* style={{ backgroundColor: "#EDEDED" }} */
     >
-      <div className="bg-animado px-3 lg:px-6"></div>
+      <div className="bg-animado px-3 lg:px-3"></div>
       <div className="px-6 py-6 gap-10 lg:gap-0 lg:px-52 lg:py-20 flex flex-col lg:flex-row-reverse items-center justify-center lg:justify-between">
-        <div className="flex lg:items-end flex-col lg:text-right gap-6">
+        <div className="flex lg:items-end flex-col lg:text-right gap-6 ">
           <h1 className="text-4xl  lg:text-6xl texto-animado">
             <strong>A Patense atende aos ODS da ONU</strong>
           </h1>
-          <p className="text-xl text-white lg:w-8/12">
+          <p className="text-xl text-white lg:w-10/12">
             Com o lançamento da Agenda 2030 pela ONU em 2015, foi elaborado um
             plano de ação para tornar o planeta e as atividades nele
             desenvolvidas mais sustentáveis para a sociedade e para o meio

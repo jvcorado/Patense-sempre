@@ -1,10 +1,14 @@
 import React from "react";
 import Selo from "../../public/01a-Selo-Verde-Divulgacao-208x300.png";
 import Image from "next/image";
+import { AppProps } from "next/app";
 
 export const PorQue = () => {
   return (
-    <section className="flex flex-col items-center gap-14 justify-between">
+    <section
+      className="flex flex-col items-center gap-14 justify-between "
+      data-aos="fade-right"
+    >
       <div className="bg-animado w-full py-5"></div>
       <div className="flex flex-col px-6 lg:flex-row items-center justify-center lg:justify-between lg:px-52 lg:py-20">
         <div className="flex gap-4 flex-col">

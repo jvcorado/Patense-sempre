@@ -7,7 +7,11 @@ import Linkedin from "../../public/linkedin(1).svg";
 
 export const Empresa = () => {
   return (
-    <section className="flex" style={{ backgroundColor: "#ededed" }}>
+    <section
+      className="flex "
+      style={{ backgroundColor: "#ededed" }}
+      data-aos="fade-up"
+    >
       <div className="flex flex-col px-10 py-7 gap-5 items-center justify-center lg:px-80 lg:py-14 lg:gap-10">
         <h1 className="text-4xl lg:text-5xl gradient-text text-center">
           Selo Verde de Sustentabilidade. Conheça mais essa empresa com{" "}

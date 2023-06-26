@@ -5,12 +5,13 @@ import heart from "../../public/img7-768x768.png";
 export const Energia = () => {
   return (
     <section
-      className="flex flex-row-reverse bg-agricultura"
+      className="flex flex-row-reverse bg-energia"
       style={{ backgroundColor: "#ededed" }}
+      data-aos="fade-left"
     >
-      <div className="bg-animado px-3 lg:px-6"></div>
+      <div className="bg-animado px-3 lg:px-3"></div>
       <div className="p-6 lg:px-52 lg:py-20 flex flex-col lg:flex-row items-center lg:justify-between">
-        <div className="flex flex-col p-6 gap-5 lg:items-end lg:text-right bg-teste lg:p-10 lg:gap-10 shadow-lg">
+        <div className="flex flex-col p-6 gap-5 lg:items-center lg:text-center bg-teste lg:p-10 lg:gap-10 shadow-lg">
           <h1 className="text-4xl lg:text-6xl texto-animado lg:h-20 capitalize">
             Energia
           </h1>

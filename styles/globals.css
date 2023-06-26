@@ -18,6 +18,7 @@ body {
   /*  background: #006633;
   background: linear-gradient(94deg, #006633 29%, #3aaa35 100%); */
   animation: bg-transition-green 5s alternate-reverse infinite;
+  overflow-x: hidden;
 }
 
 header {
@@ -98,7 +99,7 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url(./../public/tractor-sprays-pesticides-field.jpg);
+  background-image: url(./../public/green-planet.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,7 +123,7 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #ffffff9a;
+  background-color: #0000009a;
   filter: brightness(0.5);
   z-index: -1;
   opacity: 50%;
@@ -132,4 +133,63 @@ header {
 .bg-teste > div {
   position: relative;
   z-index: 2;
+}
+
+.bg-biogestor {
+  position: relative;
+}
+
+.bg-biogestor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(./../public/Biodigestor.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.5);
+  z-index: 1;
+}
+
+.bg-biogestor > div {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-energia {
+  position: relative;
+}
+
+.bg-energia::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(./../public/coogeracao-de-energia.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.5);
+  z-index: 1;
+}
+
+.bg-energia > div {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-odores {
+  background-image: url(../public/faixacinza@2x.png);
+  background-position: center center;
+}
+
+@media (max-width: 1000px) {
+  body {
+    overflow-x: visible !important;
+  }
 }
